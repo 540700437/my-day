@@ -2,7 +2,7 @@
 知乎问题回答抓取器（CDP 连接版 v8）
 核心改动：不再用 launch_persistent_context 启动新 Edge（会被强制加上
 --no-sandbox 等自动化标志，导致知乎直接拦截），改为 connect_over_cdp
-连接你手动打开、已登录好的 Edge 浏览器。对知乎来说，这就是普通用户在操作。
+需要连接手动打开、已登录好的 Edge 浏览器
 """
 
 from playwright.sync_api import sync_playwright, TimeoutError as PWTimeoutError
